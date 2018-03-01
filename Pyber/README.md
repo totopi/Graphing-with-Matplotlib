@@ -1,4 +1,10 @@
 
+3 Observed Trends:
+
+1) Urban rides, while happening much more frequently, tend to be shorter and thus cheaper, especially when compared to Rural rides.
+2) While they only account for 1% of total drivers, Rural drivers account for more than 5% of total rides and fares.
+3) It is better to be a customer in an Urban area, while a driver would want to be Suburban or Rural due to low price and high volume of rides in Urban areas vs higher average prices and lower ride volume in Suburban and Rural areas.
+
 
 ```python
 # The internet told me this is important.
@@ -86,7 +92,7 @@ plt.show()
 ```
 
 
-![png](output_6_0.png)
+![png](output_7_0.png)
 
 
 
@@ -111,7 +117,7 @@ plt.show()
 ```
 
 
-![png](output_7_0.png)
+![png](output_8_0.png)
 
 
 
@@ -130,7 +136,7 @@ for pie_wedge in pies[0]:
 ```
 
 
-![png](output_8_0.png)
+![png](output_9_0.png)
 
 
 
@@ -139,7 +145,7 @@ for pie_wedge in pies[0]:
 total_rides = type_group["driver_count"].sum()
 fig, ax = plt.subplots(figsize=(8, 5.5))
 
-fig.suptitle("% of Total Rides by City Type")
+fig.suptitle("% of Total Drivers by City Type")
 
 pies = ax.pie(total_rides, explode=(0, 0, 0.2), autopct="%.1f%%", shadow=True, labels=total_fares.index, startangle=60, colors=colors)
 
@@ -149,5 +155,5 @@ for pie_wedge in pies[0]:
 ```
 
 
-![png](output_9_0.png)
+![png](output_10_0.png)
 
